@@ -1,0 +1,6 @@
+Thermometer::Thermometer(QWidget *parent)
+    : QWidget(parent), value(50) {}
+void Thermometer::paintEvent(QPaintEvent * /* event */) {
+    QPainter painter(this);
+    painter.setRenderHint(QPainter::Antialiasing);
+    painter.setPen(Qt::NoPen);
