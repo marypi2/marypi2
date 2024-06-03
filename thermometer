@@ -1,0 +1,8 @@
+int main(int argc, char *argv[]) {
+    QApplication app(argc, argv);
+    Thermometer thermometer;
+    thermometer.setWindowTitle("thermometer");
+    thermometer.resize(200, 400);
+    thermometer.show();
+    return app.exec();
+}
